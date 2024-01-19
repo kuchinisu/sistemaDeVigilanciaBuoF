@@ -1,0 +1,42 @@
+.boton-estilizado {
+    background-color: #4CAF50; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    /* Otros estilos... */
+}
+
+Button {
+    -fx-background-color: #2E2E2E;
+    -fx-border-color: #424242;
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-style: italic;
+    -fx-font-size: 18px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 2, 0, 0);
+}
+
+.barraIzq {
+    background-color:#130424;
+    -fx-border-color: #FFFFFF;
+}
+
+/*combox*/
+.combo-box {
+    -fx-background-color: #2E2E2E;
+    -fx-font-size: 14;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #2E2E2E;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #2E2E2E;
+    -fx-text-fill: white;
+}
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!---->
+    <div class="barra-derecha">
+        <div class="botones_video" id="botones_video">
+            <button id="ant">anterior</button>
+            <button id="sig">siguiente</button>
+            <span id="valVideo">0</span>
+        </div>
+
+        <div class="contenedor-con-scroll">
+            <h2>Contenedor Interno</h2>
+            <div class="contenido-interno">
+
+            <div id="marcadores">
+                <!--<div class="marcador" style="left: 10%;">Inicio</div>-->
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    </div>
+
+    <!-- /-->
+    
+    
+    <div id="videoContainer"></div>
+
+    <div id="controlCont">
+        <input type="range" id="seekBar" min="0" max="1439" step="1" value="0" style="display: none;">
+        <span id="tiempoAct">00:00</span> / <span id="duracion">00:00</span>
+
+        <!-- -->
+        
+        <!-- -->
+    </div>
+
+    
+    <script src="javascript/Slider.js"></script>
+    <script src="javascript/AcomplarV.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,499 @@
+head{
+    background-color: #2E2E2E; 
+    margin: 0; 
+    padding: 0; 
+}
+body {
+    background-color: #2E2E2E; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+#videoContainer {
+    width: 800px; 
+    height: 450px; 
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#controlCont {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#seekBar {
+    width: 80%;
+}
+
+#tiempoAct, #duracion {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+
+/* marcadores de la barra de tiempo de video*/
+#marcadores {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.marcador {
+    /*position: absolute;*/
+    width: 60px;
+    height: 30px;
+    background-color: #2E2E2E;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 4%;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+#marcadores .marcador:hover {
+    background-color: #2980b9;
+}
+
+
+/*        */
+.pagina {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenedor-con-scroll {
+    max-height: 100px; 
+    overflow-y: auto; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+   /* margin-left: 1170px;*/
+}
+
+.contenido-interno {
+    border: 1px solid #ddd;
+}
+
+.elemento {
+    margin-bottom: 10px;
+    padding: 50px;
+    border: 1px solid #ddd;
+}
+
+
+/* */
+.barra-derecha {
+    width: 360px;
+    height: 100vh;
+    background-color: #1E1E1E;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.barra-derecha a {
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* marcadores segun label */
+
+.marcador {
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.case_0 {
+    background-color: rgb(0, 255, 0); /* Verde */
+  }
+  
+  .case_1 {
+    background-color: rgb(100, 0, 30); /* Rojo */
+  }
+  
+  .case_2 {
+    background-color: rgb(255, 0, 0); /* Rojo */
+  }
+  
+  .case_3 {
+    background-color: rgb(50, 100, 50); /* Verde */
+  }
+  
+  .case_4 {
+    background-color: rgb(0, 0, 255); /* Azul */
+  }
+  
+  .case_5 {
+    background-color: rgb(255, 255, 0); /* Amarillo */
+  }
+  
+  .case_6 {
+    background-color: rgb(255, 0, 255); /* Magenta */
+  }
+  
+  .case_7 {
+    background-color: rgb(0, 255, 255); /* Cian */
+  }
+  
+  .case_8 {
+    background-color: rgb(128, 128, 128); /* Gris */
+  }
+  
+  .case_9 {
+    background-color: rgb(128, 0, 0); /* Marrón */
+  }
+  
+  .case_10 {
+    background-color: rgb(128, 128, 0); /* Oliva */
+  }
+  
+  .case_11 {
+    background-color: rgb(0, 128, 0); /* Verde oscuro */
+  }
+  
+  .case_12 {
+    background-color: rgb(255, 165, 0); /* Naranja */
+  }
+  
+  .case_13 {
+    background-color: rgb(0, 0, 128); /* Azul oscuro */
+  }
+  
+  .case_14 {
+    background-color: rgb(128, 0, 128); /* Púrpura */
+  }
+  
+  .case_15 {
+    background-color: rgb(0, 128, 128); /* Turquesa */
+  }
+
+  .case_16 {
+    background-color: rgb(128, 128, 0); /* Amarillo oscuro */
+  }
+  
+  .case_17 {
+    background-color: rgb(192, 192, 192); /* Plata */
+  }
+  
+  .case_18 {
+    background-color: rgb(255, 140, 0); /* Anaranjado */
+  }
+  
+  .case_19 {
+    background-color: rgb(139, 69, 19); /* Café */
+  }
+  
+  .case_20 {
+    background-color: rgb(0, 255, 0); /* Verde lima */
+  }
+  
+  .case_21 {
+    background-color: rgb(0, 0, 139); /* Azul oscuro */
+  }
+  
+  .case_22 {
+    background-color: rgb(255, 0, 255); /* Magenta brillante */
+  }
+  
+  .case_23 {
+    background-color: rgb(0, 255, 255); /* Cian brillante */
+  }
+  
+  .case_24 {
+    background-color: rgb(255, 218, 185); /* Melocotón */
+  }
+  
+  .case_25 {
+    background-color: rgb(128, 0, 0); /* Granate */
+  }
+  
+  .case_26 {
+    background-color: rgb(128, 128, 0); /* Oliva oscuro */
+  }
+  
+  .case_27 {
+    background-color: rgb(173, 216, 230); /* Azul celeste */
+  }
+  
+  .case_28 {
+    background-color: rgb(255, 69, 0); /* Rojo flamenco */
+  }
+  
+  .case_29 {
+    background-color: rgb(0, 128, 128); /* Verde azulado */
+  }
+  
+  .case_30 {
+    background-color: rgb(128, 0, 64); /* Vino tinto */
+  }
+  
+  .case_31 {
+    background-color: rgb(46, 139, 87); /* Verde bosque */
+  }
+/* Continuación de las clases de colores */
+
+.case_32 {
+    background-color: rgb(128, 128, 128); /* Gris medio */
+  }
+  
+  .case_33 {
+    background-color: rgb(255, 20, 147); /* Rosa profundo */
+  }
+  
+  .case_34 {
+    background-color: rgb(0, 128, 0); /* Verde bosque oscuro */
+  }
+  
+  .case_35 {
+    background-color: rgb(255, 182, 193); /* Rosa claro */
+  }
+  
+  .case_36 {
+    background-color: rgb(70, 130, 180); /* Azul acero */
+  }
+  
+  .case_37 {
+    background-color: rgb(255, 127, 80); /* Coral */
+  }
+  
+  .case_38 {
+    background-color: rgb(0, 0, 128); /* Azul marino */
+  }
+  
+  .case_39 {
+    background-color: rgb(255, 250, 205); /* Amarillo vainilla */
+  }
+  
+  .case_40 {
+    background-color: rgb(128, 0, 128); /* Púrpura oscuro */
+  }
+  
+  .case_41 {
+    background-color: rgb(0, 128, 128); /* Azul verdoso */
+  }
+  
+  .case_42 {
+    background-color: rgb(218, 112, 214); /* Orquídea */
+  }
+  
+  .case_43 {
+    background-color: rgb(255, 215, 0); /* Dorado */
+  }
+  
+  .case_44 {
+    background-color: rgb(188, 143, 143); /* Rosa pálido */
+  }
+  
+  .case_45 {
+    background-color: rgb(165, 42, 42); /* Marrón rojizo */
+  }
+  
+  .case_46 {
+    background-color: rgb(0, 255, 127); /* Verde primavera */
+  }
+  
+  .case_47 {
+    background-color: rgb(255, 222, 173); /* Amarillo navajo */
+  }
+  
+  .case_48 {
+    background-color: rgb(139, 0, 139); /* Violeta oscuro */
+  }
+  
+  .case_49 {
+    background-color: rgb(0, 139, 139); /* Cian apagado */
+  }
+  
+  .case_50 {
+    background-color: rgb(255, 69, 0); /* Rojo tomate */
+  }
+  
+  .case_51 {
+    background-color: rgb(0, 100, 0); /* Verde oscuro */
+  }
+  
+  .case_52 {
+    background-color: rgb(123, 104, 238); /* Azul medio */
+  }
+  
+  .case_53 {
+    background-color: rgb(210, 105, 30); /* Marrón chocolate */
+  }
+  
+  .case_54 {
+    background-color: rgb(106, 90, 205); /* Azul pizarra */
+  }
+  
+  .case_55 {
+    background-color: rgb(255, 165, 79); /* Melón */
+  }
+  
+  .case_56 {
+    background-color: rgb(0, 250, 154); /* Verde medio */
+  }
+  
+  .case_57 {
+    background-color: rgb(147, 112, 219); /* Azul medio púrpura */
+  }
+  
+  .case_58 {
+    background-color: rgb(255, 228, 181); /* Almendra */
+  }
+  
+  .case_59 {
+    background-color: rgb(107, 142, 35); /* Verde oliva oscuro */
+  }
+  
+  .case_60 {
+    background-color: rgb(255, 0, 127); /* Rosa fuerte */
+  }
+  
+  .case_61 {
+    background-color: rgb(46, 139, 87); /* Verde bosque */
+  }
+  
+  .case_62 {
+    background-color: rgb(128, 0, 0); /* Rojo oscuro */
+  }
+  
+  .case_63 {
+    background-color: rgb(0, 128, 128); /* Azul verdoso */
+  }
+  
+  .case_64 {
+    background-color: rgb(255, 250, 205); /* Amarillo vainilla */
+  }
+  
+  .case_65 {
+    background-color: rgb(128, 0, 128); /* Púrpura oscuro */
+  }
+  
+  .case_66 {
+    background-color: rgb(0, 128, 128); /* Azul verdoso */
+  }
+  
+  .case_67 {
+    background-color: rgb(218, 112, 214); /* Orquídea */
+  }
+  
+  .case_68 {
+    background-color: rgb(255, 215, 0); /* Dorado */
+  }
+  
+  .case_69 {
+    background-color: rgb(188, 143, 143); /* Rosa pálido */
+  }
+  
+  .case_70 {
+    background-color: rgb(165, 42, 42); /* Marrón rojizo */
+  }
+  
+  .case_71 {
+    background-color: rgb(0, 128, 0); /* Verde intenso */
+  }
+  
+  .case_72 {
+    background-color: rgb(240, 230, 140); /* Amarillo khaki */
+  }
+  
+  .case_73 {
+    background-color: rgb(139, 0, 0); /* Rojo oscuro */
+  }
+  
+  .case_74 {
+    background-color: rgb(0, 255, 127); /* Verde primavera */
+  }
+  
+  .case_75 {
+    background-color: rgb(100, 149, 237); /* Azul acero claro */
+  }
+  
+  .case_76 {
+    background-color: rgb(255, 99, 71); /* Rojo tomate claro */
+  }
+  
+  .case_77 {
+    background-color: rgb(0, 128, 128); /* Azul verdoso */
+  }
+  
+  .case_78 {
+    background-color: rgb(255, 250, 205); /* Amarillo vainilla */
+  }
+  
+  .case_79 {
+    background-color: rgb(128, 0, 128); /* Púrpura oscuro */
+  }
+  
+  .case_80 {
+    background-color: rgb(0, 128, 128); /* Azul verdoso */
+  }
+  
+  .case_81 {
+    background-color: rgb(218, 112, 214); /* Orquídea */
+  }
+  
+  .case_82 {
+    background-color: rgb(255, 215, 0); /* Dorado */
+  }
+  
+  .case_83 {
+    background-color: rgb(188, 143, 143); /* Rosa pálido */
+  }
+  
+  .case_84 {
+    background-color: rgb(165, 42, 42); /* Marrón rojizo */
+  }
+  
+  .case_85 {
+    background-color: rgb(0, 255, 255); /* Cian brillante */
+  }
+  
+  .case_86 {
+    background-color: rgb(255, 20, 147); /* Rosa profundo */
+  }
+  
+  .case_87 {
+    background-color: rgb(128, 128, 0); /* Oliva oscuro */
+  }
+  
+  .case_88 {
+    background-color: rgb(173, 216, 230); /* Azul celeste */
+  }
+  
+  .case_89 {
+    background-color: rgb(255, 0, 255); /* Magenta brillante */
+  }
+  
+  .case_90 {
+    background-color: rgb(0, 255, 255); /* Cian brillante */
+  }
+  
+  .case_91 {
+    background-color: rgb(255, 218, 185); /* Melocotón */
+  }
+  
+  .case_default {
+    background-color: rgb(0, 255, 0); /* Verde */
+  }
+    
