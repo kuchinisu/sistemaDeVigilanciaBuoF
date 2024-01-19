@@ -32,10 +32,10 @@ public class fotos {
         ImageView icono = new ImageView(gifImagen);
         stakboton.getChildren().addAll(icono, botonTomarFoto);
 
-        // Organizar elementos horizontalmente
+        
         elementos.getChildren().addAll(textoPath, stakboton);
 
-        // Aplicar margen al elemento TextField
+        
         HBox.setMargin(textoPath, new javafx.geometry.Insets(20, 0, 0, 20));
 
         StackPane panl = new StackPane();
@@ -58,7 +58,6 @@ public class fotos {
 
 
         try {
-            // Copia el archivo desde el directorio origen al directorio destino
             Files.copy(directorioOrigen, rutaImagenDestino);
 
             System.out.println("screenshot");

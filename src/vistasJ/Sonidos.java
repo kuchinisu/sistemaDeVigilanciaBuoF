@@ -8,16 +8,10 @@ import java.io.File;
 public class Sonidos {
     public void alarma(String rutaArchivo) {
         try {
-            // Obtener un flujo de entrada de audio desde el archivo
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(rutaArchivo).getAbsoluteFile());
-
-            // Obtener un objeto Clip para reproducir sonido
             Clip clip = AudioSystem.getClip();
-
-            // Abrir el flujo de entrada de audio y cargar el clip
             clip.open(audioInputStream);
 
-            // Reproducir el sonido
             clip.start();
 
         } catch (Exception e) {

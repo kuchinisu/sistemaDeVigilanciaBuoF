@@ -1,8 +1,8 @@
 .boton-estilizado {
-    background-color: #4CAF50; /* Color de fondo */
-    -fx-text-fill: white; /* Color del texto */
-    font-size: 14px; /* Tamaño de la fuente */
-    /* Otros estilos... */
+    background-color: #4CAF50; 
+    -fx-text-fill: white; 
+    font-size: 14px; 
+    
 }
 
 Button {
